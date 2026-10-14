@@ -1,6 +1,6 @@
 services:
   api:
-    image: DOCKERHUB_USER/lr-api:v1
+    image: ramish52843/lr-api:v1
     container_name: lr-api
     ports:
       - "5000:5000"
