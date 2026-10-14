@@ -25,7 +25,7 @@ def predict():
     except KeyError as e:
         return jsonify(error=f"missing parameter {e.args[0]}"), 400
     except ValueError:
-        return jsonify(error="x1, x2, x3 must be numbers"), 400
+        return jsonify(error="x1, x2, x3 must be some numbers"), 400
 
     y = a1 * x1 + a2 * x2 + a3 * x3 + b
     return app.response_class(
