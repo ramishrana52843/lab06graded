@@ -1,0 +1,10 @@
+services:
+  api:
+    image: DOCKERHUB_USER/lr-api:v1
+    container_name: lr-api
+    ports:
+      - "5000:5000"
+    environment:
+      REG_NO: "FA23-BAI-XXX"
+      SEED: "XXX"
+    restart: unless-stopped
